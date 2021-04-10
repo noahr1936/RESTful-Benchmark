@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+
+<head>
+<link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+	<div class="bb-mainForm">
+		<h2>Enter a bible verse</h2>
+		<div class="container">
+			<h:form>
+				<label id="book">Book</label>
+				<br />
+				<h:selectOneMenu value="#{verse.book}">
+
+					<f:selectItem itemValue="Genesis" itemLabel="Genesis" />
+					<f:selectItem itemValue="Exodus" itemLabel="Exodus" />
+					<f:selectItem itemValue="Leviticus" itemLabel="Leviticus" />
+					<f:selectItem itemValue="Numbers" itemLabel="Numbers" />
+					<f:selectItem itemValue="Deuteronomy" itemLabel="Deuteronomy" />
+					<f:selectItem itemValue="Joshua" itemLabel="Joshua" />
+					<f:selectItem itemValue="Judges" itemLabel="Judges" />
+					<f:selectItem itemValue="Ruth" itemLabel="Ruth" />
+					<f:selectItem itemValue="1 Samuel" itemLabel="1 Samuel" />
+					<f:selectItem itemValue="2 Samuel" itemLabel="2 Samuel" />
+					<f:selectItem itemValue="1 Kings" itemLabel="1 Kings" />
+					<f:selectItem itemValue="2 Kings" itemLabel="2 Kings" />
+					<f:selectItem itemValue="1 Chronicles" itemLabel="1 Chronicles" />
+					<f:selectItem itemValue="2 Chronicles" itemLabel="2 Chronicles" />
+					<f:selectItem itemValue="Ezra" itemLabel="Ezra" />
+					<f:selectItem itemValue="Nehemiah" itemLabel="Nehemiah" />
+
+					<f:selectItem itemValue="Esther" itemLabel="Esther" />
+					<f:selectItem itemValue="Job" itemLabel="Job" />
+					<f:selectItem itemValue="Psalms" itemLabel="Psalms" />
+					<f:selectItem itemValue="Proverbs" itemLabel="Proverbs" />
+
+					<f:selectItem itemValue="Ecclesiastes" itemLabel="Ecclesiastes" />
+					<f:selectItem itemValue="Song of Solomon"
+						itemLabel="Song of Solomon" />
+					<f:selectItem itemValue="Isaiah" itemLabel="Isaiah" />
+					<f:selectItem itemValue="Jeremiah" itemLabel="Jeremiah" />
+					<f:selectItem itemValue="Lamentations" itemLabel="Lamentations" />
+					<f:selectItem itemValue="Ezekiel" itemLabel="Ezekiel" />
+					<f:selectItem itemValue="Daniel" itemLabel="Daniel" />
+					<f:selectItem itemValue="Hosea" itemLabel="Hosea" />
+					<f:selectItem itemValue="Joel" itemLabel="Joel" />
+					<f:selectItem itemValue="Amos" itemLabel="Amos" />
+					<f:selectItem itemValue="Obadiah" itemLabel="Obadiah" />
+					<f:selectItem itemValue="Jonah" itemLabel="Jonah" />
+					<f:selectItem itemValue="Micah" itemLabel="Micah" />
+					<f:selectItem itemValue="Nahum" itemLabel="Nahum" />
+					<f:selectItem itemValue="Habakkuk" itemLabel="Habakkuk" />
+					<f:selectItem itemValue="Zephaniah" itemLabel="Zephaniah" />
+					<f:selectItem itemValue="Haggai" itemLabel="Haggai" />
+					<f:selectItem itemValue="Zechariah" itemLabel="Zechariah" />
+					<f:selectItem itemValue="Malachi" itemLabel="Malachi" />
+					<f:selectItem itemValue="Matthew" itemLabel="Matthew" />
+					<f:selectItem itemValue="Mark" itemLabel="Mark" />
+					<f:selectItem itemValue="John" itemLabel="John" />
+					<f:selectItem itemValue="Acts" itemLabel="Acts" />
+					<f:selectItem itemValue="Romans" itemLabel="Romans" />
+					<f:selectItem itemValue="1 Corinthians" itemLabel="1 Corinthians" />
+					<f:selectItem itemValue="2 Corinthians" itemLabel="2 Corinthians" />
+					<f:selectItem itemValue="Galatians" itemLabel="Galatians" />
+					<f:selectItem itemValue="Ephesians" itemLabel="Ephesians" />
+
+					<f:selectItem itemValue="Philippians" itemLabel="Philippians" />
+					<f:selectItem itemValue="Colossians" itemLabel="Colossians" />
+					<f:selectItem itemValue="1 Thessalonians"
+						itemLabel="1 Thessalonians" />
+					<f:selectItem itemValue="2 Thessalonians"
+						itemLabel="2 Thessalonians" />
+					<f:selectItem itemValue="1 Timothy" itemLabel="1 Timothy" />
+					<f:selectItem itemValue="2 Timothy" itemLabel="2 Timothy" />
+					<f:selectItem itemValue="Titus" itemLabel="Titus" />
+					<f:selectItem itemValue="Philemon" itemLabel="Philemon" />
+					<f:selectItem itemValue="Hebrews" itemLabel="Hebrews" />
+					<f:selectItem itemValue="James" itemLabel="James" />
+					<f:selectItem itemValue="1 Peter" itemLabel="1 Peter" />
+					<f:selectItem itemValue="2 Peter" itemLabel="2 Peter" />
+					<f:selectItem itemValue="1 John" itemLabel="1 John" />
+					<f:selectItem itemValue="2 John" itemLabel="2 John" />
+					<f:selectItem itemValue="3 John" itemLabel="3 John" />
+					<f:selectItem itemValue="Jude" itemLabel="Jude" />
+					<f:selectItem itemValue="Revelation" itemLabel="Revelation" />
+				</h:selectOneMenu>
+				<br />
+				<label id="chapter">Chapter</label>
+				<br />
+				<h:inputText id="bibleChapter" value="#{verse.chapter}" />
+				<br />
+				<label id="verse">Verse</label>
+				<br />
+				<h:inputText id="bibleVerse" value="#{verse.verse}" />
+				<br />
+
+				<h:commandButton action="#{formController.onSubmit()}"
+					value="Submit" />
+			</h:form>
+		</div>
+	</div>
+</body>
+
+</html>

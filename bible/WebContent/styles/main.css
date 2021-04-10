@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+body{
+	margin: 0;
+	padding:0;
+	background-image: linear-gradient(to right, white, purple, yellow)
+}
+.bb-mainForm{
+	text-align:center;
+	background-color: rgba(255,255,255, 0.5);
+	width: 300px;
+	margin: 0 auto;
+	font-size:25px;
+	border-radius:15px;
+	height: auto;
+}
+.container{
+	padding:30px;
+}
+
+.bb-mainForm h2{
+	margin:20px;
+}
+
+.bb-returnedVerse-form{
+	margin-top:50px;
+}
+
+.bb-returnedVerse-container{
+	text-align:center;
+	margin:0 auto;
+	background-color: rgba(255,255,255,0.5);
+	width: 400px;
+	height: auto;
+	border-radius:15px;
+	padding:15px;
+	
+}
